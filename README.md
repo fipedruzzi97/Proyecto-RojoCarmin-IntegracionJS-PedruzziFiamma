@@ -2,6 +2,8 @@
 
 Este proyecto es parte del curso de **JavaScript** en Coderhouse. Consiste en un simulador interactivo integrado en el sitio de "Rojo Carmín", una plataforma dedicada al diseño editorial, arquitectura y arte. El trabajo de HTML y CSS, corresponde al final de desarrollo web - https://github.com/fipedruzzi97/Entrega-Final-CH-PedruzziFiamma
 
+El simulador de JavaScript se encuentra exclusivamente en la pestaña de **CONTACTO**
+
 ## Funcionalidad
 El simulador permite a los artistas presentar su obra y recibir una oferta estimada de forma automática. 
 - **Entrada:** El usuario completa su nombre y un mensaje detallando su obra.
