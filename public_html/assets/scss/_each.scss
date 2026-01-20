@@ -1,0 +1,33 @@
+// Generar botones de colores automáticamente
+@each $color, $value in (primary: #A2231D, secondary: #00171F, dark: #491311) {
+  .btn-#{$color} {
+    background: $value;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: $font-primary;
+    
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+// Generar espacios automáticamente
+@each $size in (10, 20, 30, 40, 50) {
+  .p-#{$size} {
+    padding: #{$size}px;
+  }
+  
+  .m-#{$size} {
+    margin: #{$size}px;
+  }
+}
+
+// Generar colores de texto automáticamente
+@each $color, $value in (primary: #A2231D, secondary: #00171F, white: #fff) {
+  .text-#{$color} {
+    color: $value !important; 
+  }
+}
