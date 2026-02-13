@@ -10,18 +10,41 @@ const inputEmail = document.getElementById("emailSuscripcion");
 
 // traemos el json con fetch
 const pedirCategorias = async () => {
-    try {
-        const respuesta = await fetch('../js/categorias.json');
-        categoriasObra = await respuesta.json();
-    } catch (error) {
-        Swal.fire({
-            icon: 'error',
-            title: 'Error',
-            text: 'No se pudieron cargar las categorías',
-            confirmButtonColor: "#491311"
-        });
+    // Solo actuamos si estamos en la página que tiene el formulario de contacto
+    if (formContacto) {
+        const posiblesRutas = [
+            '../js/categorias.json',
+            '../../js/categorias.json',
+            './js/categorias.json'
+        ];
+
+        let encontrado = false;
+
+        for (let ruta of posiblesRutas) {
+            try {
+                const respuesta = await fetch(ruta);
+                if (respuesta.ok) {
+                    categoriasObra = await respuesta.json();
+                    encontrado = true;
+                    break; 
+                }
+            } catch (error) {
+            
+            }
+        }
+
+        if (!encontrado) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: 'No se pudieron cargar las categorías',
+                confirmButtonColor: "#491311"
+            });
+        }
     }
 };
+
+/*admito que esto me ayude un poquito con IA porque me aparecia el error de que no encontraba las categorias en los otros hTMl*/
 
 pedirCategorias();
 
@@ -100,7 +123,7 @@ if (formContacto) {
             const finalUsd = calcularTotalUsd(acumuladoUsd);
             const finalArs = convertirAPesos(finalUsd);
 
-            // localstorage
+            // lo puse solo para demostrar el localstorage
             const simulacion = {
                 usuario: nombreArtista,
                 categorias: detectadas,
@@ -116,7 +139,7 @@ if (formContacto) {
             // alerta
             Swal.fire({
                 title: "¡Presupuesto generado!",
-                text: "Deslizá para ver el detalle de la propuesta.",
+                text: "Cierra para ver el detalle de la propuesta.",
                 icon: "success",
                 confirmButtonColor: "#491311"
             });
@@ -155,7 +178,7 @@ if (formSuscripcion) {
 
         Swal.fire({
             title: "¡Suscripción exitosa!",
-            text: `Registramos tu correo: ${emailUsuario}.`,
+            text: `Registramos tu correo: ${emailUsuario}. Te llegarán todas nuestras últimas novedades.`,
             icon: "success",
             confirmButtonColor: "#491311", 
             confirmButtonText: "¡Genial!"
