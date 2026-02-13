@@ -1,7 +1,0 @@
-[
-    { "nombre": "Pintura", "ofertaBase": 1000 },
-    { "nombre": "Editorial", "ofertaBase": 1500 },
-    { "nombre": "Fotografía", "ofertaBase": 500 },
-    { "nombre": "Branding", "ofertaBase": 1200 },
-    { "nombre": "Arquitectura", "ofertaBase": 2500 }
-]
