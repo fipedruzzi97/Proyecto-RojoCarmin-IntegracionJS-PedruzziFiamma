@@ -1,8 +1,10 @@
 # Rojo Carmín - Proyecto Final Integrador JS
 
-Este proyecto es la entrega final del curso de **JavaScript** en Coderhouse. Consiste en un simulador interactivo integrado en el sitio web de "Rojo Carmín", una plataforma dedicada al diseño editorial, arquitectura y arte. 
+Este proyecto es la entrega final del curso de **JavaScript** en Coderhouse. Consiste en un simulador interactivo integrado en el sitio web de "Rojo Carmín", una plataforma dedicada al diseño editorial, arquitectura y arte. Dentro del formulario de contacto puedes solicitar un presupuesto para poder presentar tu proyecto (*Pintura, Editorial, Fotografía, Branding, Arquitectura*). Pueden visualizarlo 
+en la siguiente página:  https://fipedruzzi97.github.io/Proyecto-RojoCarmin-IntegracionJS-PedruzziFiamma/
 
-*El desarrollo de la interfaz (HTML y CSS) corresponde al proyecto final del curso de Desarrollo Web y se puede visualizar aquí:* [Repositorio HTML/CSS](https://github.com/fipedruzzi97/Entrega-Final-CH-PedruzziFiamma)
+
+*El desarrollo de la interfaz (HTML y CSS) corresponde al proyecto final del curso de Desarrollo Web y se puede visualizar aquí:* https://github.com/fipedruzzi97/Entrega-Final-CH-PedruzziFiamma
 
 ---
 
@@ -35,8 +37,6 @@ Para cumplir con la rúbrica del proyecto final, se aplicaron los siguientes con
 > **IMPORTANTE:** Debido al uso de peticiones asincrónicas (`fetch`) para leer el archivo JSON, el proyecto **debe ser ejecutado a través de un servidor local** (como la extensión *Live Server* de VS Code). Si se abre el archivo HTML directamente en el navegador, las políticas de seguridad bloquearán la carga de las categorías.
 
 
-Desarrollado por Fiamma Pedruzzi
-
 1. Clona este repositorio o descárgalo en formato ZIP.
 2. Abre la carpeta en Visual Studio Code.
 3. Haz clic derecho sobre el archivo `index.html` o `contacto.html` y selecciona **"Open with Live Server"**.
@@ -44,3 +44,5 @@ Desarrollado por Fiamma Pedruzzi
 5. En el formulario, asegúrate de incluir una de las siguientes palabras clave en tu mensaje: *Pintura, Editorial, Fotografía, Branding o Arquitectura*.
 6. Haz clic en **Enviar** y observa la alerta de SweetAlert confirmando la creación de la propuesta y el renderizado en pantalla.
 7. También puedes probar el formulario de **Suscripción** en el pie de página de cualquier sección del sitio.
+
+Desarrollado por Fiamma Pedruzzi 
